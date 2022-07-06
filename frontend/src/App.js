@@ -18,7 +18,6 @@ function App() {
         return res.json()
       }
     }).then(jsonRes => setNotes(jsonRes))
-
   })
 
   function handleChange(event) {
@@ -59,12 +58,12 @@ function App() {
 
       <div className="p-5">
         <h1>All Notes</h1>
-        {notes.map(note => {
+        {notes.map((note) => {
           return (
-            <div>
-              <h2>{note.title}</h2>
-              <h3>{note.content}</h3>
-            </div>
+          <div>
+            <h2>{note.title}</h2>
+            <h3>{note.content}</h3>
+          </div>
           )
         })}
 
